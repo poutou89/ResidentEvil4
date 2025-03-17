@@ -25,26 +25,36 @@ header {
 }
 
 header nav ul li:not(:last-child):after {
-    content:" |"
+    content: "|";
+    color: black;
+    font-size: 20px;
+    margin-left: 14px;
 }
 
+h1 {
+    font-size: 40px;
+}
 
+h1, h2 {
+    text-transform: uppercase;
+}
 
 header nav ul {
     display: flex;
     justify-content: space-around;
     padding-left: 0;
     width: 50vh;
+    align-items: center;
 }
 
 header nav ul li a {
     color: black;
-    
 }
 
 #banner {
     display: flex;
     background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
     height: 70vh;
     justify-content: center;
     flex-direction: column;
@@ -73,6 +83,7 @@ header nav ul li a {
 
 .container h2 {
     text-align: center;
+    margin: 5% 0 2% 0;
 }
 
 #presentation {
@@ -92,19 +103,19 @@ header nav ul li a {
 #actus {
     display: flex;
     justify-content: space-between;
-    gap: 4vh;
 }
 
 .actu {
     flex-direction: column;
     background-color: rgb(56, 56, 56);
     color: white;
-    height: 28vw;
-    width: 54vh;
+    height: 50vh;
+    width: 30%;
 }
 
 .actu-image img{
-    height: 14vw;
+    height: 12vw;
+    width: 100%;
 }
 
 .actu-text {
@@ -138,17 +149,16 @@ header nav ul li a {
 }
 
 .infos-image a img{
-    width: 80%;
+    width: 50%;
     align-self: center;
 }
 
 #infos ul{
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     width: 100%;
     justify-content: space-evenly;
-    padding: 0 6vh;
+    padding: 0 5vh;
+    align-items: center;
 }
 
 #infos ul li a {
@@ -156,5 +166,8 @@ header nav ul li a {
 }
 
 .mentions ul li:not(:last-child):after {
-    border-right: 2px solid white;
+    content: "|";
+    color: white;
+    font-size: 20px;
+    margin-left: 14px;
 }
