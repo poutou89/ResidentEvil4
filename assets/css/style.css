@@ -1,0 +1,150 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+body {
+    font-family: "Roboto";
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+/* CSS particulier */
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 6vh;
+}
+
+header nav ul li a {
+    color: black;
+}
+
+#banner {
+    display: flex;
+    background-image: url(../img/banner.jpg);
+    height: 70vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 50%;
+}
+
+.accroche {
+    color: white;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 5vw auto;
+    padding: 0 50px;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+#presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.btn {
+    background-color: brown;
+    color: white;
+    padding: 0.5vw 4vh;
+}
+
+#actus {
+    display: flex;
+    justify-content: space-between;
+    gap: 4vh;
+}
+
+.actu {
+    flex-direction: column;
+    background-color: rgb(56, 56, 56);
+    color: white;
+    height: 28vw;
+    width: 54vh;
+}
+
+.actu-image img{
+    height: 14vw;
+}
+
+.actu-text {
+    margin: 10px;
+}
+
+#newsletter {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(56, 56, 56);
+    color: white;
+    padding: 4% 0;
+}
+
+#newsletter input {
+    padding: 0.8vh;
+    border-radius: 5px;
+}
+
+#infos {
+    display: flex;
+    background-color: black;
+    width: 100%;
+    justify-content: center;
+}
+
+.infos-image {
+    width: 20%;
+}
+
+.infos-image a img{
+    width: 80%;
+    align-self: center;
+}
+
+#infos ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 0 6vh;
+}
+
+#infos ul li a {
+    color: white;
+}
