@@ -24,16 +24,22 @@ header {
     justify-content: center;
 }
 
+header nav ul li:not(:last-child):after {
+    content:" |"
+}
+
+
+
 header nav ul {
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    padding: 0 6vh;
+    justify-content: space-around;
+    padding-left: 0;
+    width: 50vh;
 }
 
 header nav ul li a {
     color: black;
+    
 }
 
 #banner {
@@ -147,4 +153,8 @@ header nav ul li a {
 
 #infos ul li a {
     color: white;
+}
+
+.mentions ul li:not(:last-child):after {
+    border-right: 2px solid white;
 }
