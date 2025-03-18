@@ -24,11 +24,11 @@ header {
     justify-content: center;
 }
 
-header nav ul li:not(:last-child):after {
-    content: "|";
-    color: black;
-    font-size: 20px;
-    margin-left: 14px;
+header nav ul li:not(:last-child) a:after {
+    content: "";
+    border-right: 1px solid black;
+    position: relative;
+    left: 7px;
 }
 
 h1 {
@@ -86,7 +86,7 @@ header nav ul li a {
     margin: 5% 0 2% 0;
 }
 
-#presentation {
+.presentation {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,7 +100,7 @@ header nav ul li a {
     padding: 0.5vw 4vh;
 }
 
-#actus {
+.actus {
     display: flex;
     justify-content: space-between;
 }
@@ -140,7 +140,6 @@ header nav ul li a {
 #infos {
     display: flex;
     background-color: black;
-    width: 100%;
     justify-content: center;
 }
 
@@ -155,8 +154,7 @@ header nav ul li a {
 
 #infos ul{
     display: flex;
-    width: 100%;
-    justify-content: space-evenly;
+    gap: 5px;
     padding: 0 5vh;
     align-items: center;
 }
@@ -165,9 +163,9 @@ header nav ul li a {
     color: white;
 }
 
-.mentions ul li:not(:last-child):after {
-    content: "|";
-    color: white;
-    font-size: 20px;
-    margin-left: 14px;
+.mentions ul li:not(:last-child) a:after {
+    content: "";
+    border-right: 1px solid white;
+    position: relative;
+    left: 3px;
 }
